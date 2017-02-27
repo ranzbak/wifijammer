@@ -1,6 +1,9 @@
 wifijammer
 ==========
 
+In this hack, I removed channel 1 6 and 11 from the channels to jam, so you can use this version to *force* everybody around you to channel 1, 6 and 11 on the 2.4 GHz band.
+No other modifications are done.
+
 Continuously jam all wifi clients and access points within range. The effectiveness of this script is constrained by your wireless card. Alfa cards seem to effectively jam within about a block radius with heavy access point saturation. Granularity is given in the options for more effective targeting. 
 
 

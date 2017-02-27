@@ -347,7 +347,7 @@ def cb(pkt):
                     args.accesspoint.add(pkt[Dot11].addr3.lower())
                 # bail if bssid is not in target list
                 if not args.accesspoint.intersection([pkt.addr1.lower(), pkt.addr2.lower()]):
-                    # pkt does not match our target list 
+                    # pkt does not match our target list
                     return
 
             if args.skip:
@@ -373,7 +373,7 @@ def APs_add(clients_APs, APs, pkt, chan_arg, world_arg):
     try:
         # Thanks to airoscapy for below
         ap_channel = str(ord(pkt[Dot11Elt:3].info))
-        chans = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'] if not args.world else ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13'] 
+        chans = ['2', '3', '4', '5', '7', '8', '9', '10'] if not args.world else ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13']
         if ap_channel not in chans:
             return
 
